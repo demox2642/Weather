@@ -37,18 +37,21 @@ class MainActivity : ComponentActivity() {
             val splashScreen by viewModel.keepSplashOnScreen.collectAsState()
             keepSplashOnScreen = splashScreen
 
-            WeatherTheme {
-                val navController = rememberNavController()
+            if (splashScreen.not()) {
+                WeatherTheme {
+                    val navController = rememberNavController()
 
-                Scaffold(modifier = Modifier.fillMaxSize().systemBarsPadding(),
-                ) { innerPadding ->
-                    NavHost(
-                        navController = navController,
-                        startDestination = MainScreens.MainScreen.route,
-                        modifier = Modifier.padding(innerPadding),
-                    ) {
-                        mainNavScreens(navController)
+                    Scaffold(
+                        modifier = Modifier.fillMaxSize().systemBarsPadding(),
+                    ) { innerPadding ->
+                        NavHost(
+                            navController = navController,
+                            startDestination = MainScreens.MainScreen.route,
+                            modifier = Modifier.padding(innerPadding),
+                        ) {
+                            mainNavScreens(navController)
 
+                        }
                     }
                 }
             }
