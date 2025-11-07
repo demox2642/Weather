@@ -1,0 +1,25 @@
+package com.demox.feature.main.domain.models
+
+data class CurrentData(
+    val cloud: Int,
+    val condition: ConditionData,
+    val dewPointC: Double,
+    val feelsLikeC: Double,
+    val gustKph: Double,
+    val heatIndexC: Double,
+    val humidity: Int,
+    val isDay: Int,
+    val lastUpdated: String,
+    val lastUpdatedEpoch: Long,
+    val precipIn: Double,
+    val precipMm: Double,
+    val pressureIn: Double,
+    val pressureMb: Double,
+    val tempC: Double,
+    val uv: Double,
+    val visKm: Double,
+    val windDegree: Int,
+    val windDir: String,
+    val windKph: Double,
+    val windChillC: Double,
+)

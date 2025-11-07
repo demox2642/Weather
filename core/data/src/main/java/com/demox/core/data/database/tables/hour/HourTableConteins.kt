@@ -1,0 +1,42 @@
+package com.demox.core.data.database.tables.hour
+
+object HourTableConteins {
+    const val  TABLE_NAME = "hour"
+
+    object Colums {
+        const val CHANCE_OF_RAIN = "chance_of_rain"
+        const val CHANCE_OF_SNOW = "chance_of_snow"
+        const val CLOUD = "cloud"
+        const val CONDITION_CODE = "condition_code"
+        const val DEW_POINT_C = "dew_point_c"
+        const val DEW_POINT_F = "dew_point_f"
+        const val FEELS_LIKE_C = "feels_like_c"
+        const val FEELS_LIKE_F = "feels_like_f"
+        const val GUST_KPH = "gust_kph"
+        const val GUST_MPH = "gust_mph"
+        const val HEAT_INDEX_C = "heat_index_c"
+        const val HEAT_INDEX_F = "heat_index_f"
+        const val HUMIDITY = "humidity"
+        const val IS_DAY = "is_day"
+        const val PRE_CIP_IN = "pre_cip_in"
+        const val PRE_CIP_MM = "pre_cip_mm"
+        const val PRESSURE_IN = "pressure_in"
+        const val PRESSURE_MB = "pressure_mb"
+        const val SNOW_CM = "snow_cm"
+        const val TEMP_C = "temp_c"
+        const val TEMP_F = "temp_f"
+        const val TIME = "time"
+        const val TIME_EPOCH = "time_epoch"
+        const val UV = "uv"
+        const val VIS_KM = "vis_km"
+        const val VIS_MILES = "vis_miles"
+        const val WILL_IT_RAIN = "will_it_rain"
+        const val WILL_IT_SNOW = "will_it_snow"
+        const val WIND_DEGREE = "wind_degree"
+        const val WIND_DIR = "wind_dir"
+        const val WIND_KPH = "wind_kph"
+        const val WIND_MPH = "wind_mph"
+        const val WINDCHILL_C = "windchill_c"
+        const val WINDCHILL_F = "windchill_f"
+    }
+}

@@ -1,0 +1,30 @@
+package com.demox.feature.main.domain.models
+
+data class HourData(
+    val chanceOfRain: Int,
+    val chanceOfSnow: Int,
+    val cloud: Int,
+    val condition: ConditionData,
+    val dewPointC: Double,
+    val feelsLikeC: Double,
+    val gustKph: Double,
+    val heatIndexC: Double,
+    val humidity: Int,
+    val isDay: Int,
+    val preCipIn: Double,
+    val preCipMm: Double,
+    val pressureIn: Double,
+    val pressureMb: Double,
+    val snowCm: Double,
+    val tempC: Double,
+    val time: String,
+    val timeEpoch: Long,
+    val uv: Double,
+    val visKm: Double,
+    val willItRain: Int,
+    val willItSnow: Int,
+    val windDegree: Int,
+    val windDir: String,
+    val windKph: Double,
+    val windchillC: Double
+)
