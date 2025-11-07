@@ -51,7 +51,8 @@ fun WeatherUIItems(
         if (currentWeather == null && isRefreshing.not()) {
             Box(
                 modifier = Modifier.fillMaxSize()
-                    .padding(horizontal = 6.dp, vertical = 10.dp),
+                    .padding(horizontal = 6.dp, vertical = 10.dp)
+                    .verticalScroll(verticalScrollState),
                 contentAlignment = Alignment.Center
             ) {
                 Text(
